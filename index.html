@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.930.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hole">
+    <div class="hd">
+        <h2 class="he1">LANGUAGE TRANSLATE:</h2>
+    </div>
+    <div class="container">
+        <div class="d1">
+            <textarea class="ok" id="sourceText" rows="4" cols="50" placeholder="Enter text to translate" ></textarea>
+        </div>
+       
+    </div>
+
+    
+    <div class="d3">
+
+
+        <label for="sourceLang" class="t1" >Source Language Code:</label>
+        <input type="text" id="sourceLang" class="te1" placeholder="Enter source"><br>
+       
+    </div>
+    
+    <div class="d2">
+        <label for="targetLang" class="t2" >Target Language Code:</label>
+        <input type="text" id="targetLang" class="te2" placeholder="Enter Target"><br>
+        
+    </div>
+   
+
+</div>
+<div class="d4">
+   
+    <button class="button-82-pushable" role="button" onclick="performTranslation()" >
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text">
+        Translate
+        </span>
+      </button>
+    <h2>Translated Text:</h2>
+    <p id="translatedText" style="background-color: aliceblue; width: 500px ; height:80px; border-radius: 3%; font: bold; font-size: larger;"></p>
+</div>
+</body>
+</html>
